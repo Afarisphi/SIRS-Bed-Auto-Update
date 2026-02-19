@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SIRS Auto Update Bed PRO",
+  "version": "1.0",
+  "description": "Auto update bed SIRS dengan manual approval",
+  "permissions": [],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/fo/formtt*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
